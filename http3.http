@@ -2,6 +2,6 @@ post http://localhost:7000/api/planet HTTP/1.1
 Cookie: JSESSIONID=node01pccn3cq57xffr1r9uz5htjk24.node0
 
 {
-    "name":"myass",
+    "name":"planetname",
     "ownerId":1
 }
