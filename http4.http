@@ -1,0 +1,2 @@
+delete http://localhost:7000/api/planet/2 HTTP/1.1
+Cookie: JSESSIONID=node01pccn3cq57xffr1r9uz5htjk24.node0
