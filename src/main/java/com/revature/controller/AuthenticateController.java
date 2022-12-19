@@ -1,5 +1,8 @@
 package com.revature.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.revature.models.User;
 import com.revature.models.UsernamePasswordAuthentication;
 import com.revature.service.UserService;
@@ -7,7 +10,6 @@ import com.revature.service.UserService;
 import io.javalin.http.Context;
 
 public class AuthenticateController {
-	
 	private UserService userService = new UserService();
 
 	public void authenticate(Context ctx) {

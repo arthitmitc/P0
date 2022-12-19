@@ -15,7 +15,11 @@ public class MoonController {
 
 	public void getAllMoons(Context ctx) {
 		
-		ctx.json(mService.getAllMoons()).status(200);
+		List<Moon> lm= mService.getAllMoons();
+		if ( lm != null )
+			ctx.json(lm).status(200);
+		else
+			ctx.status(500);
 	}
 
 	public void getMoonByName(Context ctx) {

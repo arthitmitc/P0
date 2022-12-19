@@ -16,8 +16,11 @@ public class PlanetController {
 	private PlanetService pService = new PlanetService();
 
 	public void getAllPlanets(Context ctx) {
-		
-		ctx.json(pService.getAllPlanets()).status(200);
+		List<Planet> lp= pService.getAllPlanets();
+		if ( lp != null )
+			ctx.json(lp).status(200);
+		else
+			ctx.status(500);
 	}
 
 	public void getPlanetByName(Context ctx) {

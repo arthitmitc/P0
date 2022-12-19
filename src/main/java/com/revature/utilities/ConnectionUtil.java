@@ -13,7 +13,7 @@ public class ConnectionUtil {
     public static Connection createConnection(){
         try {
             Properties prop = new Properties();
-            prop.load(new FileInputStream("src/main/resources/db-properties.properties"));
+            prop.load(new FileInputStream("C:\\Users\\ShitOS\\AppData\\Roaming\\SPB_Data\\revature\\12-21-2022\\p0\\src\\main\\resources\\db-properties.properties"));
             return DriverManager.getConnection(
                 prop.getProperty("URL"), 
                 prop.getProperty("USERNAME"), 
