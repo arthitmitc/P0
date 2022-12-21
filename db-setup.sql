@@ -15,5 +15,5 @@ create table planets(
 create table moons(
 	id serial primary key,
 	name varchar(20),
-	myPlanetId int references planets(id)
+	myPlanetId int references planets(id) ON DELETE CASCADE
 );
